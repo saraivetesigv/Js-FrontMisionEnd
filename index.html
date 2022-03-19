@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/png" href="Imagenes/pokebolaicon.png">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="script.js"></script>
+
+        <title>POKEDEX</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="pokedex" >
+            <div>
+                <div id="circulo" style=" background:#DD082F;margin-left: 15px;"></div>
+                <div id="circulo" style=" background:#FDCB05;"></div>
+                <div id="circulo" style=" background:#27C202;"></div>
+                <h1 class="titulo">Pokedex</h1>
+            </div>
+            <div>
+                <form class="forminicio">
+                    <select id="OS" class="inputn" onchange="cambiarbusqueda()" style="color: #48020D;">
+                        <option></option>
+                        <option value="1">Nombre pokemón</option>
+                        <option value="2">Numero pokemón</option>
+                    </select>
+                    <p  id="inputp1"><input type="text" class="inputn" id="input1"></p>
+                    <button class="buttoni" onclick="buscarpokemon()" type="button">Buscar pokemón</button>
+                    <div style="margin-bottom: 5%;">
+                        <label id="textoa" class="textoa"></label>
+                        <label id="textoa2" class="textoa2"></label>
+                    </div>
+                </form>
+            </div>
+            <div class="rect2" id="rect2">
+                <div style="width: 15%;float: left;">
+                    <img src="imagenes/pokebolaicon.png">
+                </div>
+                <div style="width:70%;float: left;">
+                    <h3 style="text-align: center;color: #5D6063;font-size: 25px;">Información del Pokemón</h3>
+                </div>
+                <div style="width: 15%;float: left;text-align: right;">
+                    <img src="imagenes/pokebolaicon.png">
+                </div>
+                <div style="width: 100%;float: left;">
+                    <p class="rect3"><input style="display: none; " 
+                        type="image" id="imagepoke"></p>
+                    <div style="width: 50%;float: left;text-align: center;">
+                        <p style="color: #5D6063;">Nombre: <br><input id="nombrep" class="rect4"></p>
+                    </div>
+                    <div style="width: 50%;float: left;text-align: center;">
+                        <p style="color: #5D6063;">Tipo de pokemón: <br><input id="tipop" class="rect4"></p>
+                    </div>
+                    <div style="width: 50%;text-align: center;margin-right: auto;margin-left: auto;">
+                        <p style="color: #5D6063;">Estadisticas:<br>
+                          <table class="rect4" id="tstadistic" style="margin-left: auto;margin-right: auto;">
+                           <thead><tr ><td style="border-bottom: 2px solid #27C202;">Nombre</td>
+                            <td style="border-bottom: 2px solid #27C202;">#</td></tr></thead>
+                        </table></p>
+                    </div>
+                </div>
+                <div  style="width: 100%;float: left;margin-top: 20px;" >
+                    <p style="text-align: center;color: #5D6063;">Movimientos:
+                    </p>
+                    <div class="listamov"  id="movi" style="list-style: none;text-align: center;color:#5DA54D">
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>dsad</h5>
+            </div>
+        </div>
+    </body>
+</html>
